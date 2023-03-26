@@ -1,0 +1,161 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+      "title": "DCAPI",
+      "contact": {},
+      "version": "1.0"
+    },
+    "servers": [
+      {
+        "url": "https://gdc.gov.jo",
+        "variables": {}
+      }
+    ],
+    "paths": {
+      "/DC_API/api/DCAPIDB": {
+        "get": {
+          "tags": [
+            "Misc"
+          ],
+          "summary": "https://gdc.gov.jo/DC_API/api/DCAPIDB?DC_ID=2052",
+          "operationId": "https://gdc.gov.jo/DC_API/api/DCAPIDB?DC_ID=2052",
+          "parameters": [
+            {
+              "name": "DC_ID",
+              "in": "query",
+              "description": "",
+              "required": true,
+              "style": "form",
+              "explode": true,
+              "schema": {
+                "type": "integer",
+                "format": "int32",
+                "example": 2052
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "",
+              "headers": {}
+            }
+          },
+          "deprecated": false,
+          "security": [
+            {
+              "basic": []
+            }
+          ]
+        }
+      },
+      "/DC_API/api/dcapi/getallorg": {
+        "get": {
+          "tags": [
+            "Misc"
+          ],
+          "summary": "https://gdc.gov.jo/DC_API/api/dcapi/getallorg",
+          "operationId": "https://gdc.gov.jo/DC_API/api/dcapi/getallorg",
+          "parameters": [],
+          "responses": {
+            "200": {
+              "description": "",
+              "headers": {}
+            }
+          },
+          "deprecated": false,
+          "security": [
+            {
+              "basic": []
+            }
+          ]
+        }
+      },
+      "/DC_API/api/DCAPIdet": {
+        "get": {
+          "tags": [
+            "Misc"
+          ],
+          "summary": "https://gdc.gov.jo/DC_API/api/DCAPIdet?DC_ID=3234",
+          "operationId": "https://gdc.gov.jo/DC_API/api/DCAPIdet?DC_ID=3234",
+          "parameters": [
+            {
+              "name": "DC_ID",
+              "in": "query",
+              "description": "",
+              "required": true,
+              "style": "form",
+              "explode": true,
+              "schema": {
+                "type": "integer",
+                "format": "int32",
+                "example": 3234
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "",
+              "headers": {}
+            }
+          },
+          "deprecated": false,
+          "security": [
+            {
+              "basic": []
+            }
+          ]
+        }
+      },
+      "/dc_api/api/DCAPIMain": {
+        "get": {
+          "tags": [
+            "Misc"
+          ],
+          "summary": "https://gdc.gov.jo/dc_api/api/DCAPIMain?OrgID=10",
+          "operationId": "https://gdc.gov.jo/dc_api/api/DCAPIMain?OrgID=10",
+          "parameters": [
+            {
+              "name": "OrgID",
+              "in": "query",
+              "description": "",
+              "required": true,
+              "style": "form",
+              "explode": true,
+              "schema": {
+                "type": "integer",
+                "format": "int32",
+                "example": 10
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "",
+              "headers": {}
+            }
+          },
+          "deprecated": false,
+          "security": [
+            {
+              "basic": []
+            }
+          ]
+        }
+      }
+    },
+    "components": {
+      "securitySchemes": {
+        "basic": {
+          "type": "http",
+          "scheme": "basic"
+        }
+      }
+    },
+    "security": [],
+    "tags": [
+      {
+        "name": "Misc",
+        "description": ""
+      }
+    ]
+  }
